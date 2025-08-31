@@ -1,0 +1,77 @@
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-5);
+}
+
+.infoCard {
+  height: 100%;
+}
+
+.infoCard h3 {
+  margin-bottom: var(--space-4);
+}
+
+.infoItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--space-4);
+}
+
+.infoItem svg {
+  color: var(--color-primary);
+  margin-right: var(--space-3);
+  flex-shrink: 0;
+}
+
+.infoItem h4 {
+  margin-bottom: var(--space-1);
+  font-size: 1rem;
+}
+
+.infoItem p, .infoItem a {
+  color: var(--color-subtext);
+  margin-bottom: 0;
+}
+
+.contactForm form {
+  width: 100%;
+}
+
+.contactForm h3 {
+  margin-bottom: var(--space-4);
+}
+
+.formGroup {
+  margin-bottom: var(--space-3);
+}
+
+.formGroup input, .formGroup textarea {
+  margin-bottom: var(--space-1);
+}
+
+.submitStatus {
+  margin-top: var(--space-3);
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+}
+
+.success {
+  background-color: rgba(74, 222, 128, 0.2);
+  color: #166534;
+}
+
+.error {
+  background-color: rgba(248, 113, 113, 0.2);
+  color: #b91c1c;
+}
+
+@media (max-width: 768px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .infoCard {
+    margin-bottom: var(--space-4);
+  }
+}

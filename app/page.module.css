@@ -1,0 +1,25 @@
+.intro {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-5);
+}
+
+@media (max-width: 768px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
